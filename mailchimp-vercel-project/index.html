@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscribe to Our Newsletter</title>
+  
+  <!-- Add your CSS here -->
+  <style>
+    #signup-form-container {
+      position: fixed;
+      left: 0;
+      width: 300px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    #signup-form {
+      background: white;
+      padding: 15px;
+      padding-top: 15px;
+      border: 1px solid black;
+      border-radius: 2px;
+      width: 220px;
+      font-family: Libertinus Mono, sans-serif;
+      position: relative;
+    }
+
+    #signup-form h2 {
+      font-size: 9.2px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 10px;
+    }
+
+    #signup-form p {
+      font-size: 10px;
+      margin-bottom: 20px;
+    }
+
+    #signup-form label {
+      font-size: 2px;
+      color: #333;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    #signup-form input[type="text"],
+    #signup-form input[type="email"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 15px;
+      font-family: libertinus mono;
+      font-size: 11px;
+      border-bottom: 1px solid black;
+    }
+
+    #signup-form button {
+      width: 60%;
+      padding: 8px;
+      border: solid 1px;
+      border-radius: 17px;
+      background-color: white;
+      letter-spacing: 1.2px;
+      font-family: Inter;
+      font-size: 9.3px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+    }
+
+    #form-message {
+      margin-top: 10px;
+      font-size: 14px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="signup-form-container">
+    <div id="signup-form">
+      <h2>Follow Along&nbsp;<text-icon icon="mail-1"></text-icon><br><br><br></h2>
+      <p><br>Sign up to get journal posts sent straight to your inbox.<br><br><br><br><!-- Updated Form --></p>
+      
+      <!-- Name Input Field -->
+      <input id="name" name="FNAME" placeholder="Name" required="" type="text">
+      
+      <!-- Email Input Field -->
+      <input id="email" name="EMAIL" placeholder="Email" required="" type="email">
+      <br>
+      
+      <!-- Submit Button -->
+      <button id="submit-button" type="button">Subscribe<br></button>
+      
+      <div id="form-message"></div>
+    </div>
+  </div>
+
+  <!-- Link to the JavaScript file -->
+  <script src=“/subscribe.js"></script>
+
+</body>
+</html>
